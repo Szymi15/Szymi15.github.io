@@ -1,59 +1,87 @@
+<!Typ dokumentu html>
 <html>
-  <head>
+<głowa>   
+    <link rel="Ikona skrótu" href="in.ico" />
     <meta charset="utf-8">
-    <style>
-      /* Style dla wyśrodkowania iframe */
-      iframe {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      /* Styl dla tabeli */
-      table {
-        width: 65%;
-        border: 1px solid;
-        margin: 0 auto;
-      }
-    </style>
-   <link rel="icon" sizes="32x32" href="ikon.png" type="image/png">
-  </head>
-  <body>
-    <table border="1">
-      <tr>
-        <td colspan="3">
-          <iframe scrolling="no" width="900" height="100" name="obszar_logo" src="poboczne_katana.html" border="0"></iframe>
+    <title>Strona z ramkami</title>
+    <styl>
+        ul {
+            pozycja w stylu listy: wewnątrz; /* Ustawia kropki bliźej tresci */
+            dopełnienie po lewej stronie: 0; /* Usuwa domylny odstęp od lewego */
+            margines-lewy: 0; /* Usuwa domyślny marginesy od lewego */
+        }
+        li {
+            margines na dole: 5px; /* Dodaje niewielkie odstęp między elementami list */
+        }
+        .nagłówek-stopka {
+            wyrównanie tekstu: do środka;
+            rodzina czcionek: „Georgia”, serif; /* Elegancka czcionka */
+            grubość czcionki: pogrubiona;
+        }
+        .nagłówek-stopka .tytuł {
+            rozmiar czcionki: 24px; /* Duży rozmiar dla autora */
+            odstępy między literami: 2px; /* Dodaje odstępy między literami */
+        }
+        .nagłówek-stopka .podtytuł {
+            rozmiar czcionki: 16 pikseli; /* Mniejszy rozmiar dla daty */
+            styl czcionki: kursywa; /* Kursy dla dat */
+            margines u góry: 5 pikseli; /* Odstęp od odpowiedzialnego */
+        }
+    </styl>
+</głowa>
+<ciało>
+    
+<szerokość tabeli="95%" border="1" align="środek">
+    <!-- Nagłówek -->
+    <powrót>
+        <td colspan="3" class="nagłówek-stopka">
+           <img src="logo_gal.png" border=1 align=center>
+            <div class="subtitle">Gdańsk, 5.12.2024</div>
         </td>
-      </tr>
-      <tr>
+    </tr>
+    <!-- Środek strony -->
+    <powrót>
+        <!-- Menu Lewe -->
         <td width="18%" align="center">
-          <b>lewe menu</b>
-          <ul>
-            <li>
-              <a href="https://zse.edu.gdansk.pl/" target="obszar_glowny">Strona ZSE</a>
-            </li>
-            <li>
-              <a href="https://www.kuratorium.gda.pl/" target="obszar_glowny">Kuratorium</a>
-            </li>
-          </ul>
+            <b>Menu Lewe</b>
+            <ul>
+                <li><a href="https://zse.edu.gdansk.pl/" target="obszar_glowny">Strona ZSE</a></li>
+                <li><a href="https://www.kuratorium.gda.pl/" target="obszar_glowny">Kuratorium</a></li>
+		<li><a href="film.mp4" target="obszar_glowny">Kliknij tutaj, aby obejrzeć wideo</a></li>
+
+            </ul>
         </td>
-        <td align="center">
-          <iframe width="650" height="420" name="obszar_glowny" src="stopa.html" border="0"></iframe>
+        <!-- Obszar główny -->
+        <td align="środek">
+            <iframe width="650" height="420" name="obszar_glown" src="start.html" border="0"></iframe>
+            <b>Obszar główny</b>
         </td>
-        <td width="18%" align="center">
-          <b>prawe menu</b>
-          <ul>
-            <li>
-              <a href="index.html" target="obszar_glowny" style="display: inline-block; background-color: green; width: 100px; height: 40px; text-decoration: none; border-radius: 5px;" title="Zadania od Z1 do Z6"></a>
-            </li>
-          </ul>
+        <!-- Prawne menu -->
+         <td width="18%" align="center">
+            <b>Prawne menu</b>
+            <ul>
+                <mapa id="mapa_kowalski">
+			<area shape="rect" coords="2,3,91,46" href="oto_nie_wirus.zip">
+			<area Shape="rect" coords="2,50,91,95" href="tabela_galeziwski.html" target="obszar_glowny">
+			<area Shape="circle" coords="48,125,23" href="formularz_galeziowski.html" target="obszar_glowny">
+			<area Shape="poly" coords="46,166,81,225,13,225" href="mailto:galeziowski.przemyslaw@gmail.com">
+			<kształt obszaru="koło" współrzędne="48,270,23" href="index.html" target="obszar_glown">
+			</mapa>
+			<img src="mapa.gif" alt="tutaj wybieraj link" usemap="#mapa_kowalski">
+            </ul>
         </td>
-      </tr>
-      <tr>
-        <td colspan="3">
-          <iframe scrolling="no" width="900" height="90" name="obszar_stopka" src="dolne_katana.html" border="0"></iframe>
+
+    </tr>
+    <!-- Zatrzymaj -->
+    <powrót>
+        <td colspan="3" class="nagłówek-stopka">
+            <img src="logo_gal.png" border=1 align=center>
+            <div class="subtitle">Gdańsk, 22.11.2024</div>
         </td>
-      </tr>
-    </table>
-<script type = "text/javascript" src = "//www.deszczowce.pl/licznik/licznik.php?id=125230642"></script>
-</body>
+    </tr>
+</tabela>
+    
+<script type="text/javascript" src="//www.licznikodwiedzin.pl/cnt/start.php?key=235479557"></script>
+ <center><a href="http://users2.smartgb.com/g/g.php?a=s&i=g26-39970-4c">Księga gości</a></center>
+</ciało>
 </html>
