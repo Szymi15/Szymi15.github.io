@@ -1,87 +1,87 @@
-<!Typ dokumentu html>
+<!DOCTYPE html>
 <html>
-<głowa>   
-    <link rel="Ikona skrótu" href="in.ico" />
+<head>   
+    <link rel="Shortcut icon" href="in.ico" />
     <meta charset="utf-8">
     <title>Strona z ramkami</title>
-    <styl>
+    <style>
         ul {
-            pozycja w stylu listy: wewnątrz; /* Ustawia kropki bliźej tresci */
-            dopełnienie po lewej stronie: 0; /* Usuwa domylny odstęp od lewego */
-            margines-lewy: 0; /* Usuwa domyślny marginesy od lewego */
+            list-style-position: inside; /* Ustawia kropki bliżej treści */
+            padding-left: 0; /* Usuwa domyślny odstęp od lewej */
+            margin-left: 0; /* Usuwa domyślny margines od lewej */
         }
         li {
-            margines na dole: 5px; /* Dodaje niewielkie odstęp między elementami list */
+            margin-bottom: 5px; /* Dodaje niewielki odstęp między elementami listy */
         }
-        .nagłówek-stopka {
-            wyrównanie tekstu: do środka;
-            rodzina czcionek: „Georgia”, serif; /* Elegancka czcionka */
-            grubość czcionki: pogrubiona;
+        .header-footer {
+            text-align: center;
+            font-family: 'Georgia', serif; /* Elegancka czcionka */
+            font-weight: bold;
         }
-        .nagłówek-stopka .tytuł {
-            rozmiar czcionki: 24px; /* Duży rozmiar dla autora */
-            odstępy między literami: 2px; /* Dodaje odstępy między literami */
+        .header-footer .title {
+            font-size: 24px; /* Duży rozmiar dla nazwiska */
+            letter-spacing: 2px; /* Dodaje odstępy między literami */
         }
-        .nagłówek-stopka .podtytuł {
-            rozmiar czcionki: 16 pikseli; /* Mniejszy rozmiar dla daty */
-            styl czcionki: kursywa; /* Kursy dla dat */
-            margines u góry: 5 pikseli; /* Odstęp od odpowiedzialnego */
+        .header-footer .subtitle {
+            font-size: 16px; /* Mniejszy rozmiar dla daty */
+            font-style: italic; /* Kursywa dla daty */
+            margin-top: 5px; /* Odstęp od nazwiska */
         }
-    </styl>
-</głowa>
-<ciało>
+    </style>
+</head>
+<body>
     
-<szerokość tabeli="95%" border="1" align="środek">
+<table width="95%" border="1" align="center">
     <!-- Nagłówek -->
-    <powrót>
-        <td colspan="3" class="nagłówek-stopka">
+    <tr>
+        <td colspan="3" class="header-footer">
            <img src="logo_gal.png" border=1 align=center>
-            <div class="subtitle">Gdańsk, 5.12.2024</div>
+            <div class="subtitle">Gdańsk, 6.12.2024</div>
         </td>
     </tr>
     <!-- Środek strony -->
-    <powrót>
-        <!-- Menu Lewe -->
+    <tr>
+        <!-- Lewe menu -->
         <td width="18%" align="center">
-            <b>Menu Lewe</b>
+            <b>Lewe menu</b>
             <ul>
                 <li><a href="https://zse.edu.gdansk.pl/" target="obszar_glowny">Strona ZSE</a></li>
                 <li><a href="https://www.kuratorium.gda.pl/" target="obszar_glowny">Kuratorium</a></li>
-		<li><a href="film.mp4" target="obszar_glowny">Kliknij tutaj, aby obejrzeć wideo</a></li>
+<li><a href="film.mp4" target="obszar_glowny">Kliknij tutaj, aby obejrzeć wideo</a></li>
 
             </ul>
         </td>
         <!-- Obszar główny -->
-        <td align="środek">
-            <iframe width="650" height="420" name="obszar_glown" src="start.html" border="0"></iframe>
+        <td align="center">
+            <iframe width="650" height="420" name="obszar_glowny" src="start.html" border="0"></iframe>
             <b>Obszar główny</b>
         </td>
-        <!-- Prawne menu -->
+        <!-- Prawe menu -->
          <td width="18%" align="center">
-            <b>Prawne menu</b>
+            <b>Prawe menu</b>
             <ul>
-                <mapa id="mapa_kowalski">
-			<area shape="rect" coords="2,3,91,46" href="z1_z6.zip">
-			<area Shape="rect" coords="2,50,91,95" href="index.html" target="obszar_glowny">
-			<area Shape="circle" coords="48,125,23" href="formularz.html" target="obszar_glowny">
-			<area Shape="poly" coords="46,166,81,225,13,225" href="mailto:szymonminkiewicz09@gmail.com">
-			<kształt obszaru="koło" współrzędne="48,270,23" href="index.html" target="obszar_glown">
-			</mapa>
-			<img src="mapa.gif" alt="tutaj wybieraj link" usemap="#mapa_kowalski">
+                <map id="mapa_kowalski">
+<area shape="rect" coords="2,3,91,46" href="z1_z6.zip">
+<area shape="rect" coords="2,50,91,95" href="tabela.html" target="obszar_glowny">
+<area shape="circle" coords="48,125,23" href="formularz.html" target="obszar_glowny">
+<area shape="poly" coords="46,166,81,225,13,225" href="mailto:szymonminkiewicz09@gmail.com">
+<area shape="circle" coords="48,270,23" href="index.html" target="obszar_glowny">
+</map>
+<img src="mapa.gif" alt="tutaj wybieraj linki" usemap="#mapa_kowalski">
             </ul>
         </td>
 
     </tr>
-    <!-- Zatrzymaj -->
-    <powrót>
-        <td colspan="3" class="nagłówek-stopka">
+    <!-- Stopka -->
+    <tr>
+        <td colspan="3" class="header-footer">
             <img src="logo_gal.png" border=1 align=center>
-            <div class="subtitle">Gdańsk, 5.12.2024</div>
+            <div class="subtitle">Gdańsk, 6.12.2024</div>
         </td>
     </tr>
-</tabela>
+</table>
     
-<script type="text/javascript" src="//www.licznikodwiedzin.pl/cnt/start.php?key=699306091"></script>
+<script type="text/javascript" src="//www.licznikodwiedzin.pl/cnt/start.php?key=235479557"></script>
  <center><a href="http://users2.smartgb.com/g/g.php?a=s&i=g26-39970-4c">Księga gości</a></center>
-</ciało>
+</body>
 </html>
